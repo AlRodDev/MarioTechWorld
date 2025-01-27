@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-TechWorld - Historia de la Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            /*font-family: 'Press Start 2P', cursive;*/
+            font-family: 'Catamaran', sans-serif;
+            background-color: #ff0000;
+            color: #333;
+            text-align: center;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .top-bar img {
+            height: 50px;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 24px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 10px,
+                #555 10px,
+                #555 20px
+            );
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .hero {
+            background: url('mario-19.png') no-repeat center center/cover;
+            background-size: contain;
+            height: 100vh;
+            padding: 100px 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn {
+            background: #0f0fb6;
+            font-weight: bold;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .game-info, .timeline, .contact {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .era {
+            background: #ffd700;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="snes-control.png" alt="Logo">
+            <h1>Mario TechWorld</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juego">El Juego</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a Mario TechWorld</h1>
+        <p>Explora la historia de la tecnología desde la Prehistoria hasta la Edad Antigua.</p>
+        <a href="#juego" class="btn">Jugar Ahora</a>
+    </section>
+
+    <section id="juego" class="game-info">
+        <h2>Sobre el Juego</h2>
+        <p>M-TechWorld es una aventura educativa que te transporta a los inicios de la tecnología.</p>
+        <img src="MarioBrosworldSharpsubjectfocussoft.jpg" alt="Captura del juego">
+    </section>
+
+    <section id="historia" class="timeline">
+        <h2>Línea del Tiempo</h2>
+        <div class="era">
+            <h3>Prehistoria</h3>
+            <p>Descubre cómo las primeras herramientas cambiaron la vida de los humanos primitivos.</p>
+        </div>
+        <div class="era">
+            <h3>Edad Antigua</h3>
+            <p>Explora los inventos de civilizaciones como Egipto, Mesopotamia y Grecia.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? Escríbenos a <a href="mailto:eduardo.rodriguez373@educacionbogota.edu.co">eduardo.rodriguez373@educacionbogota.edu.co</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 M-TechWorld. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
